@@ -81,6 +81,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/KernelAdiutor/KernelAdiutor.apk:system/app/KernelAdiutor/KernelAdiutor.apk
 
+# Google Keyboard
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/Keyboard/Keyboard.apk:system/app/Keyboard/Keyboard.apk
+
+
 # RomStats
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/RomStats/RomStats.apk:system/app/RomStats/RomStats.apk
