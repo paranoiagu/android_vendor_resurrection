@@ -240,10 +240,10 @@ PRODUCT_VERSION = 5.6.0
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.rr.version=$(CM_VERSION) \
   ro.modversion=$(CM_VERSION) \
-  ro.romstats.url=http://resurrectionremix.sourceforge.net/stats \
-  ro.romstats.name=ResurrectionRemix \
-  ro.romstats.version=$(PRODUCT_VERSION) \
-  ro.romstats.tframe=7 
+  ro.rrstats.reportingUrl=http://resurrectionremix.trackstats.space \
+  ro.rrstats.name=ResurrectionRemix \
+  ro.rrstats.version=$(PRODUCT_VERSION) \
+  ro.trackstats.tframe=7 
 
 CM_DISPLAY_VERSION := $(CM_VERSION)
 
