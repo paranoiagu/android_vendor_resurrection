@@ -117,6 +117,13 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.local.rc:root/init.cm.rc
 
+# ViPER4Android
+ifneq ($(filter armeabi armeabi-v7a,$(SM_CPU_ABI)),)
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,vendor/cm/prebuilt/viper/app,system/priv-app) \
+    $(call find-copy-subdir-files,*.so,vendor/cm/prebuilt/viper/lib/armeabi-v7a/soundfx,system/lib/soundfx)
+endif
+
 # Copy over added mimetype supported in libcore.net.MimeUtils
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/lib/content-types.properties:system/lib/content-types.properties
@@ -162,7 +169,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Launcher3 \
     Trebuchet \
-    AudioFX \
     CMFileManager \
     Eleven \
     LockClock \
@@ -174,7 +180,12 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     LiveLockScreenService \
     WeatherProvider
-    
+
+ifeq ($(filter armeabi armeabi-v7a,$(SM_CPU_ABI)),)
+PRODUCT_PACKAGES += \
+    AudioFX
+endif
+
 # DU Utils Library
 PRODUCT_PACKAGES += \
     org.dirtyunicorns.utils
