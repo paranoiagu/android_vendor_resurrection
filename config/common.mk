@@ -179,6 +179,7 @@ PRODUCT_PACKAGES += \
     ResurrectionOTA \
     ExactCalculator \
     LiveLockScreenService \
+    CyanogenSetupWizard \
     WeatherProvider
 
 ifeq ($(filter armeabi armeabi-v7a,$(SM_CPU_ABI)),)
