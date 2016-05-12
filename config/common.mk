@@ -179,7 +179,8 @@ PRODUCT_PACKAGES += \
     ResurrectionOTA \
     ExactCalculator \
     LiveLockScreenService \
-    WeatherProvider
+    WeatherProvider \
+    DataUsageProvider
 
 ifeq ($(filter armeabi armeabi-v7a,$(SM_CPU_ABI)),)
 PRODUCT_PACKAGES += \
