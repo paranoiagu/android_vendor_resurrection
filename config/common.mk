@@ -87,7 +87,7 @@ PRODUCT_COPY_FILES += \
 
 # RomStats
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/RomStats/RomStats.apk:system/app/RomStats/RomStats.apk
+    vendor/cm/prebuilt/ResurrectionStats/ResurrectionStats.apk:system/app/ResurrectionStats/ResurrectionStats.apk
 
 # Backup Tool
 ifneq ($(WITH_GMS),true)
@@ -261,13 +261,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 DEVICE_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
-PRODUCT_VERSION = 5.6.8
+PRODUCT_VERSION = 5.6.9
     CM_VERSION := ResurrectionRemix-M-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.rr.version=$(CM_VERSION) \
   ro.modversion=$(CM_VERSION) \
-  ro.romstats.url=http://rrstats.esy.es/ \
+  ro.romstats.url=http://resurrectionremix.sourceforge.net/ \
   ro.romstats.name=ResurrectionRemix \
   ro.romstats.version=$(PRODUCT_VERSION) \
   ro.romstats.tframe=7 
