@@ -72,15 +72,15 @@ PRODUCT_COPY_FILES += \
 # Copy features.txt from the path
 PRODUCT_COPY_FILES += \
     vendor/cm/Features.mkdn:system/etc/RR/Features.txt
-    
+
 # Adaway
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/Adaway/Adaway.apk:system/app/Adaway/Adaway.apk
 
 # SMWeatherProvider
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/SMWeatherProvider/SMWeatherProvider.apk:system/app/SMWeatherProvider/SMWeatherProvider.apk
-	
+    vendor/cm/prebuilt/WeatherProvider/org.cyanogenmod.yahooweatherprovider-1.0-1system/app/YahooWeatherProvider/YahooWeatherProvider.apk
+
 # KernelAdiutor
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/KernelAdiutor/KernelAdiutor.apk:system/app/KernelAdiutor/KernelAdiutor.apk
@@ -270,7 +270,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.romstats.url=http://resurrectionremix.sourceforge.net/ \
   ro.romstats.name=ResurrectionRemix \
   ro.romstats.version=$(PRODUCT_VERSION) \
-  ro.romstats.tframe=7 
+  ro.romstats.tframe=7
 
 CM_DISPLAY_VERSION := $(CM_VERSION)
 
