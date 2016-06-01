@@ -79,7 +79,7 @@ PRODUCT_COPY_FILES += \
 
 # SMWeatherProvider
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/WeatherProvider/org.cyanogenmod.yahooweatherprovider-1.0-1system/app/YahooWeatherProvider/YahooWeatherProvider.apk
+    vendor/cm/prebuilt/WeatherProvider/org.cyanogenmod.yahooweatherprovider-1.0-1.apk:system/app/YahooWeatherProvider/YahooWeatherProvider.apk
 
 # KernelAdiutor
 PRODUCT_COPY_FILES += \
